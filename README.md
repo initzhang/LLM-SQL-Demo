@@ -1,5 +1,22 @@
 # LLM-SQL
 
+install dependencies in requirements.txt
+
+call LLM through API:
+```
+# in a separate console
+python -m vllm.entrypoints.openai.api_server --model meta-llama/Meta-Llama-3-8B-Instruct --dtype auto --api-key abc123
+# in current console
+python test_openai.py
+```
+
+call LLM as internal function:
+```
+python test_vllm.py
+```
+
+===========
+
 `llmsql` provides APIs to run LLM queries as UDF operators in relational dataframes or SQL tables.
 
 Supported data formats:

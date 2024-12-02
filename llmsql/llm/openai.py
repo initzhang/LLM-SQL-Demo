@@ -4,7 +4,7 @@ from typing import Dict, List
 import openai
 from llmsql.llm.base import DEFAULT_SYSTEM_PROMPT, LLM
 
-OPENAI_MODELS = ["gpt-3.5-turbo", "gpt-4"]
+OPENAI_MODELS = ["gpt-3.5-turbo", "gpt-4", "meta-llama/Meta-Llama-3-8B-Instruct"]
 
 class OpenAI(LLM):
     def __init__(self, base_url: str, api_key: str, model: str = "gpt-3.5-turbo"):
